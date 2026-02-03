@@ -240,7 +240,11 @@ Créez donc un fichier `props.env`, puis ajouté une variable nomme `IMGPATH` co
 IMGPATH="./images"
 ```
 
-Modifiez votre package.json pour qu'au lancement de l'application, celle-ci prenne en compte votre `.env`. Pour cela, ajoutez l'option `--env-file=props.env`.
+Modifiez votre package.json pour qu'au lancement de l'application, celle-ci prenne en compte votre `.env`. Pour cela, ajoutez l'option `--env-file=props.env`. 
+
+```
+Attention, bien mettre l'option avant le nom du fichier js lancé
+```
 
 Pour tester si cela fonctionne, affichez la variable `IMGPATH` dans la console grâce à la ligne suivante dans votre server.js: 
 

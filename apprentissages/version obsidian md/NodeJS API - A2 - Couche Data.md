@@ -46,7 +46,7 @@ Créez un fichier `user.model.js` dans votre dossier `📂models`.
 
 ```js 
 const mongoose = require('mongoose');
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     email: {type: String, required: true, unique: true},
@@ -108,6 +108,10 @@ A vous de faire vos recherches pour trouver les fonctions de mongoose. Puis, met
 - PUT /users/:id
 - DELETE /users/:id
 - GET /users/:id_or_email
+
+```text
+hint : Pour savoir si l'input utilisateur est un ID ou bien un mail, il existe dans mongoose.ObjectID une fonction .isValid(string) qui retourne vrai si la string passé en paramètre est un ObjectId valide
+```
 
 ## 04 - Agir avant d'agir
 
